@@ -9,4 +9,6 @@ public interface UsuariosRepo extends CrudRepository<Usuario, Integer>{
 	
 	@Query(value = "SELECT * FROM usuario WHERE email = :email AND senha = :senha", nativeQuery = true)
 	public Usuario login(String email, String senha);
+
+	
 }

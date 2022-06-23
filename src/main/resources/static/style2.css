@@ -1,0 +1,135 @@
+body,ul,li{
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  font-size: 1.1rem;
+  font-family: 'Lato', sans-serif;
+}
+body{
+  background-color: #CEE7E6;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+.header{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+.menu{
+  display: flex;
+} 
+.menu li{
+  margin-left: 10px;
+}
+.menu li a{
+  padding: 10px;
+}
+nav a:hover{ 
+  border-bottom: 3px solid #F2906D;
+  color: #F2906D;
+}
+.card-1{
+  background-color: #fa7f52;
+  border-radius: 9%;
+}
+.card-2{
+  background-color: #fa7f52;
+  border-radius: 9%;
+
+}
+.cards-container-flex{
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 800px;
+  margin: 45px auto;
+  height: 400px;
+}
+.cards-container-flex > div {
+  flex: 1 1 20px;
+  margin: 10px;
+}
+.title{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 90px;
+  color: white;
+  font-size: 2.5rem;
+}
+.paragraph{
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  font-size: 1.2rem ;
+} 
+.button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+button{
+  font-family: Roboto, sans-serif;
+    background: #CEE7E6;
+    outline: none;
+    width: 40%;
+    height: 50%;
+    padding: 12px 20px;
+    color:  #fa7f52;
+    border: 0;
+    border-radius: 25px;
+    font-size: 100%;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s;
+    min-width: 55%;
+}
+button:hover{
+  background-color: #F2906D;
+  color: #CEE7E6;
+}
+/* .logo{
+  margin-left: 40px;
+}
+nav{
+  background-color: green;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cards-container{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  background-color: violet;
+  margin-top: 0%;
+}
+.card-1, .card-2{
+  margin: 20px;
+  width: 300px;
+  height: 230px;
+  background-color: red;
+}
+.menu{
+  background-color: blue;
+  margin-right: 65px;
+}
+ul{
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  
+}
+li{
+  display: flex;
+  margin: 15px;
+  justify-content: space-between;
+  background-color: yellow;
+} */
