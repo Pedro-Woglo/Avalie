@@ -18,6 +18,9 @@ public class Usuario {
 	
 	@Column(name = "senha", length = 255, nullable = false)
 	private String senha;
+
+	@Column(name = "type", nullable = false)
+	private int type;
 	
 	public int getId() {
 		return id;
@@ -43,6 +46,14 @@ public class Usuario {
 	}
 	public void setSenha(String senha) {
 		this.senha = senha;
+	}
+
+	public int getType(){
+		return type;
+	}
+
+	public void setType(int type){
+		this.type = type;
 	}
 	
 }

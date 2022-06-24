@@ -24,19 +24,23 @@ public class LoginController {
 	@GetMapping(value = "/dashboard")
 	public RedirectView getDashboard() {
 		String uri = "https://rafaeleducax.shinyapps.io/primeiro_dash/?_ga=2.96400533.881204248.1649694354-419896262.1649525404";
-	       RedirectView redirectView = new RedirectView();
-	       redirectView.setUrl(uri);
+	    RedirectView redirectView = new RedirectView();
+	    redirectView.setUrl(uri);
 	 
-	       return redirectView;
+	    return redirectView;
 	}
 	
 	@PostMapping("/logar")
 	public String logar(Model model, Usuario usuario) {
 		
 		Usuario user = this.repo.login(usuario.getEmail(), usuario.getSenha());
-		if(user != null) {
+		if(user != null && user.getType() == 1) {
 			return "redirect:/dashboard";
-		}else {
+		}
+		else if(user != null && user.getType() == 0){
+			return "redirect:/redirect";
+		}
+		else {
 			model.addAttribute("status", "Email e/ou senha inválidos!");
 		}
 		return "login/index";
