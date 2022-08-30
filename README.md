@@ -1,2 +1,2 @@
 # Avalie
-Sistema web de avaliação institucional
+Sistema web de avaliação educacional
